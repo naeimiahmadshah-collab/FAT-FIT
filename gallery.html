@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fat & Fit - Gratis Ernährungsplan & BMI Rechner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="nutrition-page">
+
+<header>
+  <div class="logo">
+    <span style="--i:1;">F</span><span style="--i:2;">A</span><span style="--i:3;">T</span>
+    <span class="space" style="color: #ffffff;">&</span>
+    <span style="--i:4;">F</span><span style="--i:5;">I</span><span style="--i:6;">T</span>
+  </div>
+
+  <div class="menu-toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Über mich</a></li>
+      <li><a href="services.html">Angebote</a></li>
+      <li><a href="gallery.html" class="active">Gratis Plan</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main style="padding: 40px 20px; max-width: 900px; margin: 0 auto;">
+
+  <section style="text-align: center; margin-bottom: 40px; padding-top: 20px;">
+    <h1 style="color: #ff5722; font-size: 32px; margin-bottom: 10px;">Dein Kostenloser Ernährungsplan</h1>
+    <p style="color: #bbb; font-size: 18px;">Starte deine Fitness-Reise in Bern mit unserem 1-Wochen-Musterplan und berechne direkt deinen BMI.</p>
+  </section>
+
+  <div class="plan-grid">
+    <div class="plan-card">
+      <h2>Montag & Dienstag</h2>
+      <p class="plan-focus">Fokus: High Protein & Low Carb</p>
+      <ul>
+        <li><strong>Frühstück:</strong> Rührei aus 3 Eiern mit Spinat & Tomaten</li>
+        <li><strong>Mittagessen:</strong> Gegrillte Hähnchenbrust mit Quinoa</li>
+        <li><strong>Abendessen:</strong> Mageres Omelett mit Champignons</li>
+      </ul>
+    </div>
+
+    <div class="plan-card">
+      <h2>Regeneration & Balance</h2>
+      <p class="plan-focus">Fokus: Gesunde Fette & Energie</p>
+      <ul>
+        <li><strong>Frühstück:</strong> Vollkornbrot mit Avocado und Putenbrust</li>
+        <li><strong>Zwischenmahlzeit:</strong> Zwei Löffel Erdnussbutter mit einem Glas Milch</li>
+        <li><strong>Zwischenmahlzeit:</strong> Protein-Shake mit einer Banane und 30g Whey</li>
+        <li><strong>Zwischenmahlzeit:</strong> Magerquark mit frischen Himbeeren</li>
+        <li><strong>Zwischenmahlzeit:</strong> Gekochtes Ei und eine Handvoll Walnüsse</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="calculator-container" style="margin-top: 50px;">
+    <h2>Dein persönlicher BMI-Rechner</h2>
+    <p>Berechne deinen Body-Mass-Index direkt passend zu deinem Ernährungsplan.</p>
+
+    <div class="calculator-group">
+      <label for="weight">Gewicht (kg):</label>
+      <input type="number" id="weight" placeholder="z.B. 75">
+    </div>
+
+    <div class="calculator-group">
+      <label for="height">Größe (cm):</label>
+      <input type="number" id="height" placeholder="z.B. 175">
+    </div>
+
+    <button id="calc-btn" class="calc-btn">BMI berechnen</button>
+
+    <div id="bmi-result" class="calculator-result"></div>
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Fat & Fit Trainer. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
