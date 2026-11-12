@@ -28,6 +28,10 @@ header {
   border-bottom: 1px solid #2a2a2a;
   z-index: 1000;
 }
+header, .hamburger, .menu-toggle {
+    position: relative;
+    z-index: 1000;
+}
 
 .logo {
   font-size: 24px;
